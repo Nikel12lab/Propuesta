@@ -1,0 +1,284 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: left;
+    padding: 20px 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Alinear el título al centro en el header */
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+/* Logo Styling */
+header .logo {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+    margin-left: 20px; /* Ajusta el margen a la izquierda */
+    display: inline-block; /* Para que se mantenga en línea con el texto si es necesario */
+}
+
+/* Header Text Styling */
+header .header-text {
+    text-align: left;
+    margin-left: 20px; /* Si es necesario, ajusta para espaciar */
+}
+
+/* Títulos Styling */
+h1, h2 {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Hover Effect on Header */
+header:hover {
+    background-color: #45a049; /* Cambia el color de fondo cuando se pasa el ratón */
+}
+
+/* Animación de desvanecimiento de los títulos */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Main Sections */
+main {
+    padding: 20px;
+}
+
+/* Sección de servicios */
+.services ul li {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.services ul li:hover {
+    transform: scale(1.05); /* Efecto de aumento */
+    color: #4caf50; /* Cambia el color cuando se pasa el ratón */
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect on sections */
+section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
+}
+
+/* Calendar Section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+table th {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Hover effect on table rows */
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Pricing Section */
+.pricing p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on pricing text */
+.pricing p:hover {
+    color: #45a049; /* Cambia el color cuando se pasa el ratón */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Hover effect on footer */
+footer:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el Calendario */
+.calendar {
+    margin-top: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Alinear el título del calendario al centro */
+.calendar h4 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.calendar table th, .calendar table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.calendar table th {
+    background-color: #4caf50; /* Fondo verde */
+    color: white;
+}
+
+.calendar table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mejorar los encabezados de las tablas */
+.calendar table thead tr th {
+    font-weight: bold;
+}
+
+/* Opcional: Agregar una transición suave */
+.calendar table th, .calendar table td {
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del pie de página (para redes sociales) */
+footer {
+    background-color: #4caf50; /* Fondo verde */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Hover effect on footer */
+footer:hover {
+    background-color: #45a049;
+}
+
+/* Red Social Column Color Coding */
+.instagram {
+    background-color: #e4405f;
+    color: white;
+}
+
+.facebook {
+    background-color: #1877f2;
+    color: white;
+}
+
+.whatsapp {
+    background-color: #25d366;
+    color: white;
+}
+
+.rappi {
+    background-color: #f9a825;
+    color: white;
+}
+
+/* Button Styling */
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .calendar table {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+}
+
+/* Final Thanks Section */
+.thanks {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.thanks h3 {
+    font-size: 1.5rem;
+    color: #4caf50;
+}
+
+.thanks p {
+    font-size: 1rem;
+    color: #333;
+}
